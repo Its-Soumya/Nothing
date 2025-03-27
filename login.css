@@ -444,6 +444,7 @@ input[type="submit"]:hover {
    .menu {
         width: 13vw;
         height: 10vh;
+        backdrop-filter: none;
         background: none;
         box-shadow: none;
     }
@@ -455,6 +456,7 @@ input[type="submit"]:hover {
     .menu:hover {
         width: 60vw;
         height: 100%;
+        backdrop-filter: blur(5px);
         background: #ffffff12;
         box-shadow: 8px 0px 9px 0px #00000014;
     }
