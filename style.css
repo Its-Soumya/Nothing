@@ -246,6 +246,7 @@ section span:hover {
 
     .menu {
         width: 7vw;
+        height: 13vh;
     }
 
     .menu a{
@@ -254,6 +255,7 @@ section span:hover {
 
     .menu:hover {
         width: 60vw;
+        height: 100%;
     }
 
     .menu:hover a{
