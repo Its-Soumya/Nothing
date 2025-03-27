@@ -441,11 +441,11 @@ input[type="submit"]:hover {
         height: calc(20vw - 2px);
     }
 
-    .menu {
+   .menu {
         width: 13vw;
-        height: 11vh;
-        background: #ffffff00;
-        box-shadow: 8px 0px 9px 0px #00000000;
+        height: 10vh;
+        background: none;
+        box-shadow: none;
     }
 
     .menu a{
