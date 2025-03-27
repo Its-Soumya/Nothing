@@ -546,14 +546,36 @@ input[type="submit"]:hover {
         inset: 10px;
     }
 
-    .login{
+       .login{
         inset: 50px;
         transition: 0.5s;
     }
 
+    .inhi {
+        display: none;
+    }
+
+    .box:hover {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .box:hover .inhi {
+        display: flex;
+     } 
+
+    .box:hover .login {
+        inset: 10px;
+    }
+
     .loginBx {
+        bottom: 120px;
         width: 95%;
         transition: 0.5s;
+    }
+
+    .box:hover .loginBx {
+        bottom: 0px;
     }
 
     h2 {
