@@ -24,55 +24,76 @@ body.on{
 }
 
 
-#preloader {
-  height: 100vh;
-  width: 100vw;
-  background: black;
-  z-index: 9999999;
+#preload {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    z-index: 9999999;
 }
 
-.loader {
-  width: 250px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: helvetica, arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #ce4233;
-  letter-spacing: 0.2em;
+#loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   position: relative;
-  z-index: 9999999;
+  border: 4px solid #Fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
 }
 
-.loader::before,
-.loader::after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 15px;
-  background: #ce4233;
-  position: absolute;
-  animation: load 0.7s infinite alternate ease-in-out;
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
 }
 
-.loader::before {
-  top: 0;
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.loader::after {
-  bottom: 0;
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
 }
 
-@keyframes load {
-  0% { left: 0; height: 30px; width: 15px; }
-  50% { height: 8px; width: 40px; }
-  100% { left: 235px; height: 30px; width: 15px; }
-}
 
 .drkltmode {
     position: absolute;
@@ -547,7 +568,7 @@ input[type="submit"]:hover {
     }
 
        .login{
-        inset: 50px;
+        inset: 60px 40px;
         transition: 0.5s;
     }
 
