@@ -9,7 +9,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Body styling */
 body {
     display: flex;
     justify-content: center;
@@ -69,6 +68,13 @@ body.on {
 
 .loader::after {
   bottom: 0;
+}
+
+.on #loader{
+    border: 4px solid #000;
+}
+.on .loader-inner{
+    background-color: black;
 }
 
 @keyframes load {
@@ -161,7 +167,6 @@ section {
     overflow: hidden;
 }
 
-/* Animated gradient effect */
 section::before {
     content: '';
     position: absolute;
@@ -171,7 +176,6 @@ section::before {
     animation: animate 5s linear infinite;
 }
 
-/* Animation keyframes */
 @keyframes animate {
     0% {
         transform: translateY(-100%);
