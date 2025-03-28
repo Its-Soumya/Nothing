@@ -9,7 +9,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Body styling */
 body {
     display: flex;
     justify-content: center;
@@ -167,7 +166,6 @@ body.on{
     background: #0e4102ca;
 }
 
-/* Section styles */
 section {
     position: fixed;
     width: 100vw;
@@ -180,7 +178,6 @@ section {
     overflow: hidden;
 }
 
-/* Animated gradient effect */
 section::before {
     content: '';
     position: absolute;
@@ -190,7 +187,6 @@ section::before {
     animation: animate 5s linear infinite;
 }
 
-/* Animation keyframes */
 @keyframes animate {
     0% {
         transform: translateY(-100%);
@@ -201,7 +197,6 @@ section::before {
     }
 }
 
-/* Styling for individual spans */
 section span {
     position: relative;
     display: block;
