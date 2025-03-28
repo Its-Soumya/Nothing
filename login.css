@@ -31,13 +31,17 @@ body.on{
     z-index: 9999999;
 }
 
+.on #preload {
+    background: white;
+}
+
 #loader {
   display: inline-block;
   width: 30px;
   height: 30px;
   position: relative;
   border: 4px solid #Fff;
-  top: 50%;
+  top: 47%;
   animation: loader 2s infinite ease;
 }
 
@@ -47,6 +51,13 @@ body.on{
   width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
+}
+
+.on #loader{
+    border: 4px solid #000;
+}
+.on .loader-inner{
+    background-color: black;
 }
 
 @keyframes loader {
