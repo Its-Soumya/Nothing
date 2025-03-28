@@ -1,11 +1,11 @@
 window.addEventListener("load", function () {
-    var preloader = document.getElementById("preloader");
+    var preloader = document.getElementById("preload");
     var content = document.getElementById("content");
-    
+
     setTimeout(function () {
         preloader.style.display = "none";
         content.style.display = "block";
-    }, 3000);
+    }, 2090);
 });
 
 document.addEventListener("contextmenu", function(event) {
