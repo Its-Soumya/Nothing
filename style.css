@@ -30,6 +30,10 @@ body.on {
   z-index: 9999999;
 }
 
+.on #preloader{
+    background: white;
+}
+
 .loader {
   width: 250px;
   height: 50px;
